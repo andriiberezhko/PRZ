@@ -43,14 +43,80 @@
 // Додайте все четные числа от min до max
 
 
-const max = 50;
-const min = 23;
-let total = 0;
-for (let i = max; i >= min; i-=1) {
+// const max = 50;
+// const min = 23;
+// let total = 0;
+// for (let i = max; i >= min; i-=1) {
 
-    if (i % 2 !== 0) {
-        continue;
-    }
-     total += i;
+//     if (i % 2 !== 0) {
+//         continue;
+//     }
+//      total += i;
+// }
+// console.log(total);
+
+// /4. Напишите код, который будет спрашивать
+//логин с помощью prompt и логировать результат
+//в консоль браузера
+
+//Если посетитель вводит "Админ",
+//то prompt запрашивает пароль.
+//Если ничего не ввели или нажата клавиша Esc
+//вывести стороку "Отменено"
+//В противном случае вывксти строку "Я вас не знаю"
+
+//Пароль проверять так:
+//Если введён пароль "Я главный",
+//то вывести строку "Здравствуйте!"
+//иначе выводить строку "Неверный пароль!"
+
+const loginInput = prompt("Введите свой логин");
+
+// if (loginInput === 'Админ') {
+//     const passInput = prompt("Введите свой пароль");
+    
+//     if (passInput === 'Я главный') {
+//         console.log("Здравствуйте!");
+//     }
+//     else if (passInput === null) {
+//     console.log("Отменено");
+    
+// }
+//     else {
+//         console.log("Неверный пароль!");
+//     }
+ 
+
+// } else if (loginInput === null) {
+//     console.log("Отменено");
+    
+// }
+// else {
+//     console.log("Я вас не знаю");
+// }
+
+
+switch(loginInput){
+    case "Админ":
+        const passInput = prompt("Введите свой пароль");
+        switch (passInput) {
+            case 'Я главный':
+                console.log("Здравствуйте");
+                break;
+                
+            case null:
+                console.log("Отменено");
+                break;
+            
+            default: console.log("Неверный пароль!");
 }
-console.log(total);
+
+        break;
+    
+    case null:
+        console.log("Отменено");
+        break;
+    
+    default: console.log("Я вас не знаю");
+}
+

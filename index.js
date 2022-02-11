@@ -131,24 +131,39 @@
 //а не произвольный набор символов, не нужно.
 
 
-let userInput = prompt("Введите число");
-let total = 0;
-let check = false;
-// while (userInput) {
-//     total += Number(userInput);
+// let userInput = prompt("Введите число");
+// let total = 0;
+// let check = false;
+// // while (userInput) {
+// //     total += Number(userInput);
+// //     userInput = prompt("Введите число");
+// //     console.log(total);
+// // }
+
+// do {
+//     if (userInput) {
+//         check = true;
+//         total += Number(userInput);
 //     userInput = prompt("Введите число");
 //     console.log(total);
-// }
+//     } else {
+//         check = false;
+//         // console.log(total);
+//     }
+// } while (check);
 
-do {
-    if (userInput) {
-        check = true;
-        total += Number(userInput);
-    userInput = prompt("Введите число");
-    console.log(total);
-    } else {
-        check = false;
-        // console.log(total);
-    }
-} while (check);
+//7. Напишите цикл, который предлагает ввести
+//число больше 100 через prompt.
+//Если посетитель ввёл другое число - попросить
+//ввести ещё раз и так далее.
+//Цикл должет спрашивать число, пока посетитель не
+//введёт число больше 100, либо не нажмет кнопку
+//Отмена в prompt
 
+let inputUser = prompt('Введите число больше 100');
+
+while (inputUser < 100 && inputUser !== null) {
+    inputUser = prompt('Введите число больше 100');
+}
+
+console.log(`Вы ввели ${inputUser}`);

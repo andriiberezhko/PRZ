@@ -192,7 +192,17 @@
 //fizz если делиться на 5 возвращать buzz
 //елси делиться на 3 и на 5 возвращить fizzbuzz
 
-fizzBuzz(24);
+fizzBuzz(15);
 function fizzBuzz(num) {
-
+    
+   if (num % 3 === 0 && num % 5 === 0) {
+       console.log('fizzbuzz');
+    }
+   else if (num % 3 === 0) {
+      console.log('fizz'); 
+    }
+   else if (num % 5 === 0) {
+        console.log('buzz'); 
+    }
+    
 }

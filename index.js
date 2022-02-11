@@ -160,10 +160,27 @@
 //введёт число больше 100, либо не нажмет кнопку
 //Отмена в prompt
 
-let inputUser = prompt('Введите число больше 100');
+// let inputUser = prompt('Введите число больше 100');
 
-while (inputUser < 100 && inputUser !== null) {
-    inputUser = prompt('Введите число больше 100');
+// while (inputUser < 100 && inputUser !== null) {
+//     inputUser = prompt('Введите число больше 100');
+// }
+
+// console.log(`Вы ввели ${inputUser}`);
+
+// В переменной min лежит число от 0 до 59.
+// Определите в какую четверть часа попадает
+// это число(в первую, вторую, третью или четвертую).
+var min = 10;
+if (min >= 0 && min <= 15) {
+    console.log(`${min} находится в первой четверти`);
 }
-
-console.log(`Вы ввели ${inputUser}`);
+if (min >= 16 && min <= 30) {
+    console.log(`${min} находится во второй четверти`);
+}
+if (min >= 31 && min <= 45) {
+    console.log(`${min} находится в третьей четверти`);
+}
+if (min >= 46 && min <= 59) {
+    console.log(`${min} находится в четвертой четверти`);
+}

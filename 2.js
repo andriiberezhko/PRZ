@@ -87,3 +87,26 @@
 
 // }
 // console.log(findSmallerNumber(numbers));
+
+//Напишите функцию caculculateAverage()
+//которая принимает произвольное количество
+//аргументов и возвращает их среднее значение.
+//Добавить проверку, что аргументы это числа.
+
+const caculculateAverage = (...numbers) => {
+    console.log(numbers)
+    
+    let total = 0;
+    let count = 0;
+    for (const number of numbers) {
+        if (typeof number !== 'number') {
+            continue
+        }
+        total += number;
+        count += 1;
+    }
+
+    console.log(total/ count)
+}
+
+caculculateAverage(2, 4, 3, 7, "a", "c","b");

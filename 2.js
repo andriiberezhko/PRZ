@@ -120,24 +120,30 @@
 //если цвета нет выводит console.error('Такой цвет не найден');
 //и устанавливает цвет документа красный
 // document.body.style.background = 'red';
-const colors = ['blue', 'yellow', 'olive', 'fuchsia', 'lime', 'aqua', 'maroon']
 
-const findTheColor = (color) => {
-    // if (colors.includes(color)) {
-    //     document.body.style.background = color;
-    // }
-    // else {
-    //     console.error('Такой цвет не найден');
-    //     document.body.style.background = 'red';
-    // }
+// const colors = ['blue', 'yellow', 'olive', 'fuchsia', 'lime', 'aqua', 'maroon']
 
-    const isInArray = colors.includes(color);
-    document.body.style.background = isInArray ? color : 'red';
-    if (!isInArray) {
-       console.error('Такой цвет не найден');
-    }
+// const findTheColor = (color) => {
+//     // if (colors.includes(color)) {
+//     //     document.body.style.background = color;
+//     // }
+//     // else {
+//     //     console.error('Такой цвет не найден');
+//     //     document.body.style.background = 'red';
+//     // }
+
+//     const isInArray = colors.includes(color);
+//     document.body.style.background = isInArray ? color : 'red';
+//     if (!isInArray) {
+//        console.error('Такой цвет не найден');
+//     }
     
 
-}
+// }
 
-console.log(findTheColor('lkdshgalkg'))
+// console.log(findTheColor('lkdshgalkg'))
+
+
+//Проверка на палиндром
+//Лёша на полке клопа нашёл
+//А роза упала на лапу Азора

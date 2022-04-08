@@ -69,3 +69,21 @@
 // a[`d`] = d;
 // a[`f`] = 4;
 // console.log(a);
+
+//Напиши функцию findSmallerNumber(numbers)
+//которая ищет самое маленькое число в массиве
+// Добавь проверку что функция получает массив
+// const numbers = [2, 5, 35, 56, 12, 24, 7, 80, 3, 1];
+
+// const findSmallerNumber = (numbers) => {
+//     // return Math.min(...numbers)
+//     let minNumber = numbers[0]
+//     for (const number of numbers) {
+//         if (minNumber > number) {
+//            minNumber = number
+//        }
+//     }
+//     return minNumber
+
+// }
+// console.log(findSmallerNumber(numbers));

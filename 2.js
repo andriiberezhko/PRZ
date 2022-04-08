@@ -93,20 +93,51 @@
 //аргументов и возвращает их среднее значение.
 //Добавить проверку, что аргументы это числа.
 
-const caculculateAverage = (...numbers) => {
-    console.log(numbers)
+// const caculculateAverage = (...numbers) => {
+//     console.log(numbers)
     
-    let total = 0;
-    let count = 0;
-    for (const number of numbers) {
-        if (typeof number !== 'number') {
-            continue
-        }
-        total += number;
-        count += 1;
-    }
+//     let total = 0;
+//     let count = 0;
+//     for (const number of numbers) {
+//         if (typeof number !== 'number') {
+//             continue
+//         }
+//         total += number;
+//         count += 1;
+//     }
 
-    console.log(total/ count)
+//     console.log(total/ count)
+// }
+
+// caculculateAverage(2, 4, 3, 7, "a", "c","b");
+
+// =================================
+
+//Напишите функцию findTheColor()
+//которая принимает название цвета
+//определяет его наличие в массиве
+//если цвет есть, усталавливет его как фон документа
+//если цвета нет выводит console.error('Такой цвет не найден');
+//и устанавливает цвет документа красный
+// document.body.style.background = 'red';
+const colors = ['blue', 'yellow', 'olive', 'fuchsia', 'lime', 'aqua', 'maroon']
+
+const findTheColor = (color) => {
+    // if (colors.includes(color)) {
+    //     document.body.style.background = color;
+    // }
+    // else {
+    //     console.error('Такой цвет не найден');
+    //     document.body.style.background = 'red';
+    // }
+
+    const isInArray = colors.includes(color);
+    document.body.style.background = isInArray ? color : 'red';
+    if (!isInArray) {
+       console.error('Такой цвет не найден');
+    }
+    
+
 }
 
-caculculateAverage(2, 4, 3, 7, "a", "c","b");
+console.log(findTheColor('lkdshgalkg'))
